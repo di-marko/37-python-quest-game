@@ -1,3 +1,4 @@
+import time
 from adventures import north_adventure, east_adventure, south_adventure, west_adventure
 
 print("|----------------------------|")
@@ -35,6 +36,7 @@ def game_loop():
 
         # Logic do select adventure based on player's input.
         if dirChoice == 1:
+            time.sleep(1)
             north_adventure()
         elif dirChoice == 2:
             west_adventure()

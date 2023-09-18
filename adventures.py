@@ -1,13 +1,31 @@
+import time
+
 def north_adventure():
-    print("You chose north!")
+    time.sleep(1)
+    print("|------------------|")
+    print("| You chose north! |")
+    print("|------------------|")
+    time.sleep(2)    
     
 def east_adventure():
-    print("You chose east!")
+    time.sleep(1)
+    print("|-----------------|")
+    print("| You chose east! |")
+    print("|-----------------|")
+    time.sleep(2)
     
 def south_adventure():
-    print("You chose south!")
+    time.sleep(1)
+    print("|------------------|")
+    print("| You chose south! |")
+    print("|------------------|")
+    time.sleep(2)
     
 def west_adventure():
-    print("You chose west!")
+    time.sleep(1)
+    print("|-----------------|")
+    print("| You chose west! |")
+    print("|-----------------|")
+    time.sleep(2)
           
           
