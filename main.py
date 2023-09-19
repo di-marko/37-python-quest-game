@@ -36,15 +36,19 @@ def game_loop():
 
         # Logic do select adventure based on player's input.
         if dirChoice == 1:
-            time.sleep(1)
+            time.sleep(0.5)
             north_adventure()
         elif dirChoice == 2:
+            time.sleep(0.5)
             west_adventure()
         elif dirChoice == 3:
+            time.sleep(0.5)
             south_adventure()
         elif dirChoice == 4:
+            time.sleep(0.5)
             east_adventure()
         elif dirChoice == 5:
+            time.sleep(0.5)
             game_exit()
             run = False
         else:
