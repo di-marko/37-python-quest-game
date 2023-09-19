@@ -1,31 +1,35 @@
 import time
 
 def north_adventure():
-    time.sleep(1)
+    time.sleep(0.5)
     print("|------------------|")
     print("| You chose north! |")
-    print("|------------------|")
-    time.sleep(2)    
+    print("|------------------|\n")
+    time.sleep(0.5)
+    
+    print("Scene: A giant statue of Archimedes stands before you,")
+    print("holding a tablet that reads: 'Find my number to proceed.'")
+    time.sleep(0.5)
     
 def east_adventure():
     time.sleep(1)
     print("|-----------------|")
     print("| You chose east! |")
-    print("|-----------------|")
-    time.sleep(2)
+    print("|-----------------|\n")
+    time.sleep(1)
     
 def south_adventure():
     time.sleep(1)
     print("|------------------|")
     print("| You chose south! |")
-    print("|------------------|")
-    time.sleep(2)
+    print("|------------------|\n")
+    time.sleep(1)
     
 def west_adventure():
     time.sleep(1)
     print("|-----------------|")
     print("| You chose west! |")
-    print("|-----------------|")
-    time.sleep(2)
+    print("|-----------------|\n")
+    time.sleep(1)
           
           

@@ -24,14 +24,14 @@ def game_loop():
     while run:
         # Declare the list of direction a player can choose from.
         directions = ["north", "south", "west", "east", "EXIT"]
-        print("You are presented with 4 directions: ")
+        print("\nYou are presented with 4 directions, or exit: ")
         
-        # Iterate through the list and print the items.
+        # Iterate through the list and print the array items.
         for index, direction in enumerate(directions, start=1):
             print(f"{index}. {direction}")                
         
         # Ask for player's choice of direction.
-        dirChoice = input("Which direction do you go? ")
+        dirChoice = input("\nWhat is your choice? ")
         dirChoice = int(dirChoice)
 
         # Logic do select adventure based on player's input.
@@ -47,6 +47,8 @@ def game_loop():
         elif dirChoice == 5:
             game_exit()
             run = False
+        else:
+            print("Are you choosing the correct direction?")
             
 
 # Ask player if they want to play the game.
