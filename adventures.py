@@ -1,8 +1,6 @@
 import time
+from questions import adventures
 
-adventures = {
-    "north" : ["I think of a number. I double it and then add 10. The result is 34. What's my number?", 12],
-}
 
 def north_adventure():
     time.sleep(0.5)
@@ -15,16 +13,18 @@ def north_adventure():
     print("holding a tablet that reads: 'Find my number to proceed.'\n")
     time.sleep(0.5)
     
-    print(adventures["north"][0])
-    player = int(input(""))
+    # Retrieve question and answer from dictionary.
+    question = adventures["north"]["question"]
+    answer = adventures["north"]["answer"]
     
-    while player != adventures["north"][0][0]:
-        if player == 12:
-            print("Correct! A door behind the statue opens, revealing a passage. You proceed.")
-            break
-        else:
-            print("The statue's eyes glow red. You feel compelled to try again.\n")
-            player = int(input("-> "))
+    print(question)
+    player = int(input("-> "))
+    
+    # Keep asking player for an answer until it is correct.
+    while player != answer:
+        print("The statue's eyes glow red. You feel compelled to try again.")
+        player = int(input("-> "))            
+    print("Correct! A door behind the statue opens, revealing a passage. You proceed.\n")
         
     
 def east_adventure():
