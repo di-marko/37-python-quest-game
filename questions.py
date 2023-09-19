@@ -1,3 +1,6 @@
+# If in the future I want to expand the game by adding more quests or puzzles,
+# I can write new keys to the dictionary.
+
 adventures = {
     "north" : 
         {
@@ -20,7 +23,3 @@ adventures = {
             "answer" : "a"
         }        
 }
-
-
-
-#("What is the square root of 81?", 9)
