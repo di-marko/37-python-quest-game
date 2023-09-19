@@ -8,12 +8,10 @@ print("|----------------------------|" + "\n")
 
 # Display a short description of the adventure.
 def game_description():
-    description = ("You find yourself at the entrance of a mysterious labyrinth.\n"
-                    "Legends say that the labyrinth was built by an ancient mathematician to hide a priceless treasure.\n"
-                    "However, it's not beasts or traps that protect the treasure, but puzzles of logic and math.\n"
-                    "To retrieve the treasure and safely exit, you'll need to solve the problems posed in each chamber of the maze.\n"
-                    )
-    print(description)
+    print("|-------| You find yourself at the entrance of a mysterious labyrinth.")
+    print("| Scene | Legends say that the labyrinth was built by an ancient mathematician to hide a priceless treasure.")
+    print("|-------| However, it's not beasts or traps that protect the treasure, but puzzles of logic and math.")
+    print("To retrieve the treasure and safely exit, you'll need to solve the problems posed in each chamber of the maze.\n")
     
 def game_exit():
     print("That's too bad. If you change your mind, the adventure will be here for you. Until we meet again!")
