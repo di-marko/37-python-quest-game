@@ -1,5 +1,6 @@
 
     Author: Dmitri Markélov
+    What: First assignment at KYH The Internet of Things program.
     Goal: Write my first python program to practice the basics, as well as 
     how to work with Git.
 
@@ -73,7 +74,10 @@ Conclusion:
 After navigating through all the chambers and solving the puzzles, you find yourself in the heart of the labyrinth. A chest of golden math instruments (compass, ruler, protractor) awaits - the legendary tools of ancient mathematicians. With the treasure in hand, you make your way out, realizing that knowledge and logic are the true treasures.
 
 
-## Helpful links
+## Helpful resources I've used
+> [Making flowcharts](https://problemsolvingwithpython.com/08-If-Else-Try-Except/08.06-Flowcharts/)
+
 > [Extract elements from the list](https://www.askpython.com/python/list/extract-elements-python-list)
 
 > [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
