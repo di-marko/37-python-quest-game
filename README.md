@@ -61,9 +61,9 @@ Scene: A large observatory with celestial bodies depicted on the dome. A voice e
 
 Puzzle: "Which equation is true?
 
-    42+32=5242+32=52
-    52+122=13252+122=132
-    82+152=17282+152=172"
+    1. 4^2 + 3^2 = 5^2
+    2. 5^2 + 12^2 = 13^2
+    3. 8^2 + 15^2 = 17^2
 
 Outcome:
 
