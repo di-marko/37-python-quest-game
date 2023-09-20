@@ -1,6 +1,7 @@
 import time
-from questions import adventures
+from dictionary import adventures
 
+# Timer to set a pause before printing scene, questions. 
 def time_sleep():
     time.sleep(0.5)
     
@@ -26,13 +27,15 @@ def north_adventure():
     correct = adventures["north"]["correct"]
     wrong = adventures["north"]["wrong"]
     
+    # Wait half a second then display player's directions choice.
     time_sleep()
     print("|------------------|")
     print("| You chose north! |")
     print("|------------------|\n")
     time_sleep()
     
-    q_and_a(scene, question, answer, correct, wrong)        
+    q_and_a(scene, question, answer, correct, wrong)
+    time_sleep()        
     
 def east_adventure():
     # Retrieve scene, question and answers from dictionary.
@@ -42,6 +45,7 @@ def east_adventure():
     correct = adventures["east"]["correct"]
     wrong = adventures["east"]["wrong"]
     
+    # Wait half a second then display player's directions choice.
     time_sleep()
     print("|-----------------|")
     print("| You chose east! |")
@@ -49,6 +53,7 @@ def east_adventure():
     time_sleep()
     
     q_and_a(scene, question, answer, correct, wrong)
+    time_sleep()
     
 def south_adventure():
     # Retrieve scene, question and answers from dictionary.
@@ -58,6 +63,7 @@ def south_adventure():
     correct = adventures["south"]["correct"]
     wrong = adventures["south"]["wrong"]
     
+    # Wait half a second then display player's directions choice.
     time_sleep()
     print("|------------------|")
     print("| You chose south! |")
@@ -65,6 +71,7 @@ def south_adventure():
     time_sleep()
     
     q_and_a(scene, question, answer, correct, wrong)
+    time_sleep()
     
 def west_adventure():
     # Retrieve scene, question and answers from dictionary.
@@ -74,6 +81,7 @@ def west_adventure():
     correct = adventures["west"]["correct"]
     wrong = adventures["west"]["wrong"]
     
+    # Wait half a second then display player's directions choice.
     time_sleep()
     print("|-----------------|")
     print("| You chose west! |")
@@ -81,5 +89,6 @@ def west_adventure():
     time_sleep()
     
     q_and_a(scene, question, answer, correct, wrong)
+    time_sleep()
           
           
