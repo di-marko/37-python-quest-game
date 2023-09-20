@@ -8,7 +8,7 @@ adventures = {
             "question": "I think of a number. I double it and then add 10. The result is 34. What's my number?",
             "answer": 12,
             "wrong": "The statue's eyes glow red. You feel compelled to try again.",
-            "corrent": "Correct! A door behind the statue opens, revealing a passage. You proceed.\n"
+            "correct": "Correct! A door behind the statue opens, revealing a passage. You proceed.\n"
         },
     "east" : 
         {
