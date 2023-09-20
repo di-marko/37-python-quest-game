@@ -1,5 +1,6 @@
 import time
-from dictionary import adventures
+from dictionary import adventures, win
+
 
 # Timer to set a pause before printing scene, questions. 
 def time_sleep():
@@ -24,7 +25,11 @@ def q_and_a(scene, question, answer, correct, wrong):
                print(wrong)
         except ValueError:
             print("Are you answering in the same language? Try using numbers ;)")
-    print(correct)   
+    print(correct)
+    
+def winner():
+    player_win = win["message"]
+    print(player_win)   
 
 def north_adventure():
     # Retrieve scene, question and answers from dictionary.
@@ -42,7 +47,10 @@ def north_adventure():
     time_sleep()
     
     q_and_a(scene, question, answer, correct, wrong)
-    time_sleep()        
+    time_sleep()
+    
+    winner()
+    quit()
     
 def east_adventure():
     # Retrieve scene, question and answers from dictionary.

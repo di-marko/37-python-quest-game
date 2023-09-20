@@ -70,7 +70,7 @@ Outcome:
     Correct Answer (2): The stars align to form a constellation that points to the exit.
     Wrong Answer: The room darkens momentarily. The voice urges you to try again.
 
-Conclusion:
+Win:
 After navigating through all the chambers and solving the puzzles, you find yourself in the heart of the labyrinth. A chest of golden math instruments (compass, ruler, protractor) awaits - the legendary tools of ancient mathematicians. With the treasure in hand, you make your way out, realizing that knowledge and logic are the true treasures.
 
 

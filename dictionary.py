@@ -1,6 +1,17 @@
 # If in the future I want to expand the game by adding more quests or puzzles,
 # I can write new keys to the dictionary.
 
+description = [
+    "|-------| You find yourself at the entrance of a mysterious",
+    "|       | labyrinth. Legends say that the labyrinth was built",
+    "|       | by an ancient mathematician to hide a priceless treasure.",
+    "| Scene | However, it's not beasts or traps that protect the treasure,",
+    "|       | but puzzles of logic and math.",
+    "|       | To retrieve the treasure and safely exit, you'll need to",
+    "|-------| solve the problems posed in each chamber of the maze."
+]
+
+
 adventures = {
     "north" : 
         {
@@ -34,4 +45,8 @@ adventures = {
             "correct": "Correct! The stars align to form a constellation that points to the exit.\n",
             "wrong": "Wrong! The room darkens momentarily. The voice urges you to try again."
         }        
+}
+
+win = {
+    "message": "After navigating through all the chambers and solving the puzzles, you find yourself in the heart of the labyrinth. A chest of golden math instruments (compass, ruler, protractor) awaits - the legendary tools of ancient mathematicians. With the treasure in hand, you make your way out, realizing that knowledge and logic are the true treasures.\n"
 }

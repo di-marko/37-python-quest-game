@@ -1,5 +1,6 @@
 import time
 from adventures import north_adventure, east_adventure, south_adventure, west_adventure
+from dictionary import description
 
 print("|----------------------------|")
 print("| The Mathematical Labyrinth |")
@@ -8,10 +9,9 @@ print("|----------------------------|" + "\n")
 
 # Display a short description of the adventure.
 def game_description():
-    print("|-------| You find yourself at the entrance of a mysterious labyrinth.")
-    print("| Scene | Legends say that the labyrinth was built by an ancient mathematician to hide a priceless treasure.")
-    print("|-------| However, it's not beasts or traps that protect the treasure, but puzzles of logic and math.")
-    print("To retrieve the treasure and safely exit, you'll need to solve the problems posed in each chamber of the maze.\n")
+    for line in description:
+        print(line)
+    print()
     
 def game_exit():
     print("That's too bad. If you change your mind, the adventure will be here for you. Until we meet again!")
