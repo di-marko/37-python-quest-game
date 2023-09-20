@@ -7,22 +7,31 @@ adventures = {
             "scene": "Scene: A giant statue of Archimedes stands before you, holding a tablet that reads: 'Find my number to proceed.'\n",
             "question": "I think of a number. I double it and then add 10. The result is 34. What's my number?",
             "answer": 12,
-            "wrong": "The statue's eyes glow red. You feel compelled to try again.",
-            "correct": "Correct! A door behind the statue opens, revealing a passage. You proceed.\n"
+            "correct": "Correct! A door behind the statue opens, revealing a passage. You proceed.\n",
+            "wrong": "The statue's eyes glow red. You feel compelled to try again."
         },
     "east" : 
         {
-            "question": "q",
-            "answer" : "a"
+            "scene": "A serene pool of water with Fibonacci spiral patterns. At the center, a pedestal emerges with a note.\n",
+            "question": "The sequence starts with 0 and 1. Every number after is the sum of the two preceding ones. What's the 5th number in this sequence?",
+            "answer" : 3,
+            "correct": "The water parts, allowing you to cross to the other side.\n",
+            "wrong": "The water churns violently. You realize you need to answer correctly to pass."
         },
     "south" : 
         {
-            "question": "q",
-            "answer" : "a"
+            "scene": "A garden filled with Pythagorean trees. A chalkboard stands with a triangle drawn, one side labeled 5, another labeled 12.\n",
+            "question": "I am the length of the hypotenuse. Who am I?",
+            "answer" : 13,
+            "correct": "The trees rearrange, creating a path forward.\n",
+            "wrong": "The trees seem to close in. You must find the right length to proceed."
         },
     "west" : 
         {
-            "question": "q",
-            "answer" : "a"
+            "scene": "A large observatory with celestial bodies depicted on the dome. A voice echoes, 'Align the stars with the right equation.'\n",
+            "question": "Which equation is true?\n1. 4^2 + 3^2 = 5^2\n2. 5^2 + 12^2 = 13^2\n3. 8^2 + 15^2 = 17^2",
+            "answer" : 2,
+            "correct": "The stars align to form a constellation that points to the exit.\n",
+            "wrong": "The room darkens momentarily. The voice urges you to try again."
         }        
 }
