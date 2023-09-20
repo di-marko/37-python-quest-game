@@ -11,13 +11,20 @@ def q_and_a(scene, question, answer, correct, wrong):
     time_sleep()   
     
     print(question)
-    player = int(input("-> "))
     
     # Keep asking player for an answer until it is correct.
-    while player != answer:
-        print(wrong)
-        player = int(input("-> "))            
-    print(correct)
+    # Check for the correct data type player inputs.
+    while True:
+        try:
+           player = int(input("-> ")) 
+           
+           if player == answer:
+               break
+           else: 
+               print(wrong)
+        except ValueError:
+            print("Are you answering in the same language? Try using numbers ;)")
+    print(correct)   
 
 def north_adventure():
     # Retrieve scene, question and answers from dictionary.
