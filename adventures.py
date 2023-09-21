@@ -2,17 +2,17 @@ import time
 from dictionary import adventures, winner_msg
 
 
-# Timer to set a pause before printing scene, questions. 
+# Timer to set a pause before printing scene, questions, etc. 
 def time_sleep():
     time.sleep(0.5)
    
-# Display the winning message. Itereate through the string with multiply lines.  
+# Display the winning message. Iterate through the string with multiple lines.  
 def winner_message():
     for line in winner_msg:
         print(line)
     print()       
      
-# Creat a class of adventure for better reusability, maintainability and scalability.     
+# Create a class of adventure for better reusability, maintainability and scalability.     
 class Adventure:
     def __init__(self, direction):
         self.direction = direction
@@ -22,7 +22,7 @@ class Adventure:
         self.correct = adventures[direction]["correct"]
         self.wrong = adventures[direction]["wrong"]
         
-    # Display the background of the place where the player is located.    
+    # Display the background of the place where the player is located at.    
     def display_scene(self):
         time_sleep()
         print(f"|------------------|")

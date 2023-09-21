@@ -7,7 +7,7 @@ print("|----------------------------|")
 print("| The Mathematical Labyrinth |")
 print("|----------------------------|" + "\n")
 
-# Display description of the adventure.
+# Display description of an adventure.
 def game_description():
     for line in description:
         print(line)
@@ -38,7 +38,7 @@ def game_loop():
         except ValueError:
             dirChoice = dirChoice.lower()
 
-        # Logic do select adventure based on player's input.
+        # Logic to select adventure based on player's input.
         if dirChoice == 1 or dirChoice == "north":
             time.sleep(0.5)
             north_adventure()
