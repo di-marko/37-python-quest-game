@@ -1,4 +1,5 @@
 # Code added from https://stackoverflow.com/questions/3719243/best-practices-for-adding-gitignore-file-for-python-projects
+# Added my own exceptions to the file
 # Byte-compiled / optimized / DLL files
 __pycache__/
 .vscode/
