@@ -1,20 +1,21 @@
 import time
 from adventures import north_adventure, east_adventure, south_adventure, west_adventure
-from dictionary import description
+from dictionary import description, game_exit_msg
 
+# Welcome message and title of the game.
 print("|----------------------------|")
 print("| The Mathematical Labyrinth |")
 print("|----------------------------|" + "\n")
 
-
-# Display a short description of the adventure.
+# Display description of the adventure.
 def game_description():
     for line in description:
         print(line)
     print()
     
+# Display message when player exits game.
 def game_exit():
-    print("That's too bad. If you change your mind, the adventure will be here for you. Until we meet again!")
+    print(game_exit_msg["message"])
 
 # Main game loop.
 def game_loop():

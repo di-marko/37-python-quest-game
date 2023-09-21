@@ -6,11 +6,13 @@ from dictionary import adventures, winner_msg
 def time_sleep():
     time.sleep(0.5)
    
-# Display the winning message. 
+# Display the winning message. Itereate through the string with multiply lines.  
 def winner_message():
-    player_win = winner_msg["message"]
-    print(player_win)   
+    for line in winner_msg:
+        print(line)
+    print()       
      
+# Creat a class of adventure for better reusability, maintainability and scalability.     
 class Adventure:
     def __init__(self, direction):
         self.direction = direction
@@ -20,6 +22,7 @@ class Adventure:
         self.correct = adventures[direction]["correct"]
         self.wrong = adventures[direction]["wrong"]
         
+    # Display the background of the place where the player is located.    
     def display_scene(self):
         time_sleep()
         print(f"|------------------|")
@@ -46,14 +49,15 @@ class Adventure:
                 print("Try entering a number.")
         print(self.correct)
 
-
+# Display the north adventure.
 def north_adventure():
     north_journey = Adventure("north")
     north_journey.display_scene()
     north_journey.q_and_a()
     winner_message()
     exit()
-    
+
+# Display the east adventure.    
 def east_adventure():
     east_journey = Adventure("east")
     east_journey.display_scene()
@@ -61,13 +65,15 @@ def east_adventure():
     winner_message()
     exit()
     
+# Display the south adventure.    
 def south_adventure():
     south_journey = Adventure("south")
     south_journey.display_scene()
     south_journey.q_and_a()
     winner_message()
     exit()
-    
+
+# Display the west adventure.   
 def west_adventure():
     west_journey = Adventure("west")
     west_journey.display_scene()

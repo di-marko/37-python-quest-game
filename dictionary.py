@@ -1,16 +1,6 @@
 # If in the future I want to expand the game by adding more quests or puzzles,
 # I can write new keys to the dictionary.
 
-description = [
-    "|-------| You find yourself at the entrance of a mysterious",
-    "|       | labyrinth. Legends say that the labyrinth was built",
-    "|       | by an ancient mathematician to hide a priceless treasure.",
-    "| Scene | However, it's not beasts or traps that protect the treasure,",
-    "|       | but puzzles of logic and math.",
-    "|       | To retrieve the treasure and safely exit, you'll need to",
-    "|-------| solve the problems posed in each chamber of the maze."
-]
-
 
 adventures = {
     "north" : 
@@ -47,6 +37,26 @@ adventures = {
         }        
 }
 
-winner_msg = {
-    "message": "After navigating through all the chambers and solving the puzzles, you find yourself in the heart of the labyrinth. A chest of golden math instruments (compass, ruler, protractor) awaits - the legendary tools of ancient mathematicians. With the treasure in hand, you make your way out, realizing that knowledge and logic are the true treasures.\n"
+description = [
+    "|-------| You find yourself at the entrance of a mysterious",
+    "|       | labyrinth. Legends say that the labyrinth was built",
+    "|       | by an ancient mathematician to hide a priceless treasure.",
+    "| Scene | However, it's not beasts or traps that protect the treasure,",
+    "|       | but puzzles of logic and math.",
+    "|       | To retrieve the treasure and safely exit, you'll need to",
+    "|-------| solve the problems posed in each chamber of the maze."
+]
+
+winner_msg = [
+    "|-------| After navigating through all the chambers",
+    "|  Con  | and solving the puzzles,",
+    "|   gra | you find yourself in the heart of the labyrinth.",
+    "| tu    | A chest of golden math instruments (compass, ruler, protractor)",
+    "|  la   | awaits - the legendary tools of ancient mathematicians.",
+    "| tions | With the treasure in hand, you make your way out,",
+    "|-------| realizing that knowledge and logic are the true treasures."
+]
+
+game_exit_msg = {
+    "message": "That's too bad. If you change your mind, the adventure will be here for you. Until we meet again!"
 }
