@@ -24,86 +24,48 @@ def q_and_a(scene, question, answer, correct, wrong):
            else: 
                print(wrong)
         except ValueError:
-            print("Are you answering in the same language? Try using numbers ;)")
+            print("Try entering a number.")
     print(correct)
     
 def winner():
     player_win = win["message"]
-    print(player_win)   
+    print(player_win)
+    
+def adventure(direction):
+    scene = adventures[direction]["scene"]
+    question = adventures[direction]["question"]
+    answer = adventures[direction]["answer"]
+    correct = adventures[direction]["correct"]
+    wrong = adventures[direction]["wrong"]
+    
+    time_sleep()
+    print(f"|------------------|")
+    print(f"| You chose {direction}! |")
+    print(f"|------------------|\n")
+    time_sleep()
+    
+    q_and_a(scene, question, answer, correct, wrong)
+    time_sleep()
+     
 
 def north_adventure():
-    # Retrieve scene, question and answers from dictionary.
-    scene = adventures["north"]["scene"]
-    question = adventures["north"]["question"]
-    answer = adventures["north"]["answer"]
-    correct = adventures["north"]["correct"]
-    wrong = adventures["north"]["wrong"]
-    
-    # Wait half a second then display player's directions choice.
-    time_sleep()
-    print("|------------------|")
-    print("| You chose north! |")
-    print("|------------------|\n")
-    time_sleep()
-    
-    q_and_a(scene, question, answer, correct, wrong)
-    time_sleep()
-    
+    adventure("north")
     winner()
-    quit()
+    exit()
     
 def east_adventure():
-    # Retrieve scene, question and answers from dictionary.
-    scene = adventures["east"]["scene"]
-    question = adventures["east"]["question"]
-    answer = adventures["east"]["answer"]
-    correct = adventures["east"]["correct"]
-    wrong = adventures["east"]["wrong"]
-    
-    # Wait half a second then display player's directions choice.
-    time_sleep()
-    print("|-----------------|")
-    print("| You chose east! |")
-    print("|-----------------|\n")
-    time_sleep()
-    
-    q_and_a(scene, question, answer, correct, wrong)
-    time_sleep()
+    adventure("east")
+    winner()
+    exit()
     
 def south_adventure():
-    # Retrieve scene, question and answers from dictionary.
-    scene = adventures["south"]["scene"]
-    question = adventures["south"]["question"]
-    answer = adventures["south"]["answer"]
-    correct = adventures["south"]["correct"]
-    wrong = adventures["south"]["wrong"]
-    
-    # Wait half a second then display player's directions choice.
-    time_sleep()
-    print("|------------------|")
-    print("| You chose south! |")
-    print("|------------------|\n")
-    time_sleep()
-    
-    q_and_a(scene, question, answer, correct, wrong)
-    time_sleep()
+    adventure("south")
+    winner()
+    exit()
     
 def west_adventure():
-    # Retrieve scene, question and answers from dictionary.
-    scene = adventures["west"]["scene"]
-    question = adventures["west"]["question"]
-    answer = adventures["west"]["answer"]
-    correct = adventures["west"]["correct"]
-    wrong = adventures["west"]["wrong"]
-    
-    # Wait half a second then display player's directions choice.
-    time_sleep()
-    print("|-----------------|")
-    print("| You chose west! |")
-    print("|-----------------|\n")
-    time_sleep()
-    
-    q_and_a(scene, question, answer, correct, wrong)
-    time_sleep()
+    adventure("west")
+    winner()
+    exit()
           
           
